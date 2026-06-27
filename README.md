@@ -105,6 +105,21 @@ This project includes several visualizations to better understand the data and m
 - Residual Analysis
 - Model Performance Comparison
 
+**Model Comparison - R^2 Score**
+![Model Comparison R2](images/model_comparison_r2_score.png)
+
+**Model Comparison - MAE**
+![Model Comparison MAE](images/model_comparison_mae_score.png)
+
+**Feature Importance**
+![Feature Importance](images/feature_importance.png)
+
+**Actual vs Predicted**
+![Actual vs Predicted](images/actual_vs_predicted.png)
+
+**Residual Analysis**
+![Residual Analysis](images/residual_analysis.png)
+
 ## Future Improvements
 
 There are several opportunities to extend this project in the future:
