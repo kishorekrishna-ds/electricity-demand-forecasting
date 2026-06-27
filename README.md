@@ -19,7 +19,7 @@ The primary objectives of this project are to:
 
 ## Dataset
 
-**Dataset:** AEP Hourly Electricity Consumption
+**Dataset:** Kaggle - AEP Hourly Electricity Consumption
 
 **Target Variable:** AEP_MW (Hourly Electricity Demand)
 
@@ -62,7 +62,7 @@ The dataset contains more than 120,000 hourly electricity demand observations co
 
 The following forecasting approaches were implemented and compared:
 
-- Baseline Model(Linear Regression)
+- Baseline Model (Linear Regression)
 - Random Forest Regressor
 - XGBoost Regressor
 - ARIMA
@@ -71,13 +71,14 @@ The following forecasting approaches were implemented and compared:
 
 ## Model Performance
 
-Model | Summary |
-Random Forest | Best overall performance |
-XGBoost | Very close to Random Forest |
-Baseline | Strong benchmark model |
-Prophet | Successfully modelled trend and seasonality but struggled with short-term fluctuations |
-ARIMA | Lower predictive accuracy |
-SARIMA | Lowest performance on this dataset |
+| Model | Summary |
+|-------|---------|
+| Random Forest | Best overall performance |
+| XGBoost | Very close to Random Forest |
+| Baseline | Strong benchmark model |
+| Prophet | Successfully modelled trend and seasonality but struggled with short-term fluctuations |
+| ARIMA | Lower predictive accuracy |
+| SARIMA | Lowest performance on this dataset |
 
 ## Best Performing Model
 
@@ -90,7 +91,7 @@ Although XGBoost delivered very similar results, Random Forest slightly outperfo
 The forecasting models were evaluated using:
 
 - Mean Absolute Error (MAE)
-- R^2 Score
+- R² Score
 
 These metrics were used to compare prediction accuracy and determine the overall performance of each forecasting approach.
 
@@ -105,8 +106,8 @@ This project includes several visualizations to better understand the data and m
 - Residual Analysis
 - Model Performance Comparison
 
-**Model Comparison - R^2 Score**
-![Model Comparison R2](images/model_comparison_r2_score.png)
+**Model Comparison - R² Score**
+![Model Comparison R²](images/model_comparison_r2_score.png)
 
 **Model Comparison - MAE**
 ![Model Comparison MAE](images/model_comparison_mae_score.png)
@@ -135,7 +136,7 @@ There are several opportunities to extend this project in the future:
 
 This project compared six different forecasting approaches, including a Baseline model, Random Forest, XGBoost, ARIMA, SARIMA, and Prophet.
 
-Among all the models, **Random Forest achieved the best overall performance**, producing the lowest prediction error and the highest R^2 score. XGBoost followed closely behind, demonstrating that tree-based ensemble methods are highly effective for forecasting electricity demand when combined with appropriate feature engineering.
+Among all the models, **Random Forest achieved the best overall performance**, producing the lowest prediction error and the highest R² score. XGBoost followed closely behind, demonstrating that tree-based ensemble methods are highly effective for forecasting electricity demand when combined with appropriate feature engineering.
 
 Traditional statistical models such as ARIMA and SARIMA were able to capture temporal relationships but were less effective than the machine learning approaches for this dataset. Prophet successfully modelled the overall trend and seasonality; however, it struggled to predict short-term fluctuations with the same level of accuracy as Random Forest and XGBoost.
 
@@ -153,6 +154,10 @@ Overall, this project demonstrates the value of combining feature engineering wi
 - Ensemble Learning
 - Python Programming
 - Data Visualization
+
+## Acknowledgements
+
+The dataset used in this project was sourced from the publicly available AEP Hourly Electricity Consumption dataset on Kaggle. The project was developed for educational and portfolio purposes to explore and compare multiple forecasting techniques for electricity demand prediction.
 
 ## Author
 
